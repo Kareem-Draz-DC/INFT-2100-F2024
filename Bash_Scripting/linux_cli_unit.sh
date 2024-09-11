@@ -29,3 +29,31 @@ echo -e "\n Step 7: Display the content of 'example.txt'"
 cat example.txt
 
 
+# 5. Quoting in the CLI: Demonstrating single and double quotes
+echo -e "\nStep 8: Demonstrating single and double quotes"
+MYVAR="Hello Linux!"
+echo "Single quotes prevent variable expansion:"
+echo 'The value of MYVAR is $MYVAR'
+
+echo "Double quotes allow for variable expansion:"
+echo "The value of MYVAR is $MYVAR"
+
+#6. Permissions: Changing file permissions
+echo -e "\nStep 9: Change file permissions for example.txt to read-only"
+chmod 444 example.txt
+
+#7. Creating a global environment variable
+echo -e "\nStep 10: Creating a global environment variable"
+export MY_GLOBAL_VAR="This is my global variable" 
+
+# Display the global variable
+echo $MY_GLOBAL_VAR
+
+# ACTIVITY
+# Follow the steps below and write your own bash script! Fun!
+# 1. Create a file called my_script.sh 
+# 2. In your shell script, create a new file called activity.txt in the current directory (make sure to check the directory)
+# 3. Write the text "Hello from the shell!" into the activity.txt file
+# 4. Display the content of the activity.txt file
+# 5. Change the file's permissions to be executable
+# 6. Run the file as a script! 
